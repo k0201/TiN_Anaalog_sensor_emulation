@@ -237,17 +237,6 @@ Text Notes 1950 3850 0    50   ~ 0
 one is enought\n
 Wire Wire Line
 	2350 1650 2350 1450
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5CEC64B2
-P 2350 1450
-F 0 "#PWR?" H 2350 1300 50  0001 C CNN
-F 1 "+3.3V" H 2365 1623 50  0000 C CNN
-F 2 "" H 2350 1450 50  0001 C CNN
-F 3 "" H 2350 1450 50  0001 C CNN
-	1    2350 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 1650 3050 1950
 Wire Wire Line
@@ -340,17 +329,6 @@ F 3 "" H 9250 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9250 4400 9250 4300
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5CEDA666
-P 9250 3650
-F 0 "#PWR?" H 9250 3500 50  0001 C CNN
-F 1 "+3.3V" H 9265 3823 50  0000 C CNN
-F 2 "" H 9250 3650 50  0001 C CNN
-F 3 "" H 9250 3650 50  0001 C CNN
-	1    9250 3650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5CEDAE78
@@ -518,4 +496,75 @@ Wire Wire Line
 	7950 1950 6350 1950
 Wire Wire Line
 	8850 1950 9700 1950
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5D62C9E7
+P 2350 1450
+F 0 "#PWR?" H 2350 1300 50  0001 C CNN
+F 1 "+3.3VA" H 2365 1623 50  0000 C CNN
+F 2 "" H 2350 1450 50  0001 C CNN
+F 3 "" H 2350 1450 50  0001 C CNN
+	1    2350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5D62D885
+P 9250 3650
+F 0 "#PWR?" H 9250 3500 50  0001 C CNN
+F 1 "+3.3VA" H 9265 3823 50  0000 C CNN
+F 2 "" H 9250 3650 50  0001 C CNN
+F 3 "" H 9250 3650 50  0001 C CNN
+	1    9250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5D6AB170
+P 7400 3850
+F 0 "FB?" H 7500 3896 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" H 7500 3805 50  0000 L CNN
+F 2 "" V 7330 3850 50  0001 C CNN
+F 3 "~" H 7400 3850 50  0001 C CNN
+	1    7400 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D6AB176
+P 7650 3850
+F 0 "#PWR?" H 7650 3700 50  0001 C CNN
+F 1 "+3.3V" V 7665 3978 50  0000 L CNN
+F 2 "" H 7650 3850 50  0001 C CNN
+F 3 "" H 7650 3850 50  0001 C CNN
+	1    7650 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3850 7500 3850
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5D6ADCA1
+P 7100 3850
+F 0 "#PWR?" H 7100 3700 50  0001 C CNN
+F 1 "+3.3VA" V 7115 3977 50  0000 L CNN
+F 2 "" H 7100 3850 50  0001 C CNN
+F 3 "" H 7100 3850 50  0001 C CNN
+	1    7100 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 3850 7300 3850
+Wire Notes Line
+	6650 3750 6650 4700
+Wire Notes Line
+	6650 4700 8050 4700
+Wire Notes Line
+	8050 4700 8050 3400
+Wire Notes Line
+	8050 3400 6650 3400
+Wire Notes Line
+	6650 3400 6650 3700
+Text Notes 6650 3350 0    50   ~ 0
+voltage analog & digital voltage split\n
 $EndSCHEMATC
