@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:TiN_analog_sensor_emulation-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""

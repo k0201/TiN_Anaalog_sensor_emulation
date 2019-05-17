@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LT1528CQ)(type Legacy)(uri C:/Users/k0201/Documents/KiCad/symbols/LT1528CQ.lib)(options "")(descr ""))
+  (lib (name LT1529CQ_PBF)(type Legacy)(uri C:/Users/k0201/Documents/KiCad/symbols/LT1529CQ_PBF.lib)(options "")(descr ""))
+)
