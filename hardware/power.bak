@@ -522,6 +522,8 @@ $Comp
 L Device:Ferrite_Bead_Small FB?
 U 1 1 5D6AB170
 P 7400 3850
+AR Path="/5CDEAB6D/5D6AB170" Ref="FB?"  Part="1" 
+AR Path="/5CDEEC5A/5D6AB170" Ref="FB?"  Part="1" 
 F 0 "FB?" H 7500 3896 50  0000 L CNN
 F 1 "Ferrite_Bead_Small" H 7500 3805 50  0000 L CNN
 F 2 "" V 7330 3850 50  0001 C CNN
@@ -533,6 +535,8 @@ $Comp
 L power:+3.3V #PWR?
 U 1 1 5D6AB176
 P 7650 3850
+AR Path="/5CDEAB6D/5D6AB176" Ref="#PWR?"  Part="1" 
+AR Path="/5CDEEC5A/5D6AB176" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7650 3700 50  0001 C CNN
 F 1 "+3.3V" V 7665 3978 50  0000 L CNN
 F 2 "" H 7650 3850 50  0001 C CNN
@@ -566,5 +570,5 @@ Wire Notes Line
 Wire Notes Line
 	6650 3400 6650 3700
 Text Notes 6650 3350 0    50   ~ 0
-voltage analog & digital voltage split\n
+analog & digital voltage split\n
 $EndSCHEMATC

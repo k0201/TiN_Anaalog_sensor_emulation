@@ -30,6 +30,8 @@ F9 "ADC4" O L 4300 3950 50
 F10 "ADC5" O L 4300 4050 50 
 F11 "ADC7" O L 4300 4250 50 
 F12 "ADC6" O L 4300 4150 50 
+F13 "POTRST" O L 4300 3300 50 
+F14 "POTSHDN" O L 4300 3400 50 
 $EndSheet
 $Sheet
 S 3000 2750 950  1550
@@ -84,4 +86,52 @@ Wire Wire Line
 	3950 3050 4300 3050
 Wire Wire Line
 	3950 3150 4300 3150
+Wire Wire Line
+	3950 3300 4300 3300
+Wire Wire Line
+	4300 3400 3950 3400
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D813031
+P 5550 1350
+F 0 "H?" H 5650 1396 50  0000 L CNN
+F 1 "MountingHole" H 5650 1305 50  0000 L CNN
+F 2 "" H 5550 1350 50  0001 C CNN
+F 3 "~" H 5550 1350 50  0001 C CNN
+	1    5550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D8131EE
+P 5550 1150
+F 0 "H?" H 5650 1196 50  0000 L CNN
+F 1 "MountingHole" H 5650 1105 50  0000 L CNN
+F 2 "" H 5550 1150 50  0001 C CNN
+F 3 "~" H 5550 1150 50  0001 C CNN
+	1    5550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D8138A8
+P 5550 950
+F 0 "H?" H 5650 996 50  0000 L CNN
+F 1 "MountingHole" H 5650 905 50  0000 L CNN
+F 2 "" H 5550 950 50  0001 C CNN
+F 3 "~" H 5550 950 50  0001 C CNN
+	1    5550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5D8139A7
+P 5550 750
+F 0 "H?" H 5650 796 50  0000 L CNN
+F 1 "MountingHole" H 5650 705 50  0000 L CNN
+F 2 "" H 5550 750 50  0001 C CNN
+F 3 "~" H 5550 750 50  0001 C CNN
+	1    5550 750 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

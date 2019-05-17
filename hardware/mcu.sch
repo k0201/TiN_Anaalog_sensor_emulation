@@ -646,4 +646,36 @@ Text Label 4950 4800 0    50   ~ 0
 POTRST
 Text Label 4900 4900 0    50   ~ 0
 POTSHDN
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D80555F
+P 8400 3600
+F 0 "SW?" H 8400 3885 50  0000 C CNN
+F 1 "SW_Push" H 8400 3794 50  0000 C CNN
+F 2 "" H 8400 3800 50  0001 C CNN
+F 3 "~" H 8400 3800 50  0001 C CNN
+	1    8400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D805DAF
+P 8400 4000
+F 0 "SW?" H 8400 4285 50  0000 C CNN
+F 1 "SW_Push" H 8400 4194 50  0000 C CNN
+F 2 "" H 8400 4200 50  0001 C CNN
+F 3 "~" H 8400 4200 50  0001 C CNN
+	1    8400 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 8100 3250 0    50   ~ 0
+or dip swichtes?\n
+Wire Notes Line
+	9200 4750 9200 2800
+Wire Notes Line
+	9200 2800 7800 2800
+Wire Notes Line
+	7800 2800 7800 4750
+Wire Notes Line
+	7800 4750 9200 4750
 $EndSCHEMATC
