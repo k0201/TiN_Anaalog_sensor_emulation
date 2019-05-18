@@ -137,9 +137,7 @@ SCK
 Wire Wire Line
 	1550 1750 1550 950 
 Wire Wire Line
-	1550 950  1100 950 
-Wire Wire Line
-	1550 950  3450 950 
+	1550 950  1850 950 
 Wire Wire Line
 	9300 950  9300 1750
 Connection ~ 1550 950 
@@ -165,7 +163,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 1900 1550 1900
 Wire Wire Line
-	1300 1100 3100 1100
+	1300 1100 2050 1100
 Connection ~ 1300 1100
 Wire Wire Line
 	7300 1750 7300 950 
@@ -173,7 +171,7 @@ Wire Wire Line
 	3450 1900 3100 1900
 Connection ~ 3100 1100
 Wire Wire Line
-	1100 2050 1550 2050
+	1100 2050 1150 2050
 Text HLabel 1100 2050 0    50   Input ~ 0
 SI
 Wire Wire Line
@@ -3267,4 +3265,79 @@ Wire Wire Line
 Connection ~ 4700 7050
 Wire Wire Line
 	4700 7050 4400 7050
+$Comp
+L power:+3.3V #PWR0144
+U 1 1 5D367B76
+P 1850 600
+F 0 "#PWR0144" H 1850 450 50  0001 C CNN
+F 1 "+3.3V" H 1865 773 50  0000 C CNN
+F 2 "" H 1850 600 50  0001 C CNN
+F 3 "" H 1850 600 50  0001 C CNN
+	1    1850 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5D36BDF5
+P 1850 800
+F 0 "R30" H 1920 846 50  0000 L CNN
+F 1 "50K" H 1920 755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 800 50  0001 C CNN
+F 3 "~" H 1850 800 50  0001 C CNN
+	1    1850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 5D36D3BE
+P 2050 950
+F 0 "R31" H 2120 996 50  0000 L CNN
+F 1 "50K" H 2120 905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 950 50  0001 C CNN
+F 3 "~" H 2050 950 50  0001 C CNN
+	1    2050 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 1100
+Wire Wire Line
+	2050 1100 3100 1100
+Connection ~ 1850 950 
+Wire Wire Line
+	1850 950  3450 950 
+Wire Wire Line
+	1850 600  1850 650 
+Wire Wire Line
+	1100 950  1550 950 
+Wire Wire Line
+	1850 650  2050 650 
+Wire Wire Line
+	2050 650  2050 800 
+Connection ~ 1850 650 
+$Comp
+L Device:R R29
+U 1 1 5D41841E
+P 1150 1900
+F 0 "R29" H 1220 1946 50  0000 L CNN
+F 1 "50K" H 1220 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1080 1900 50  0001 C CNN
+F 3 "~" H 1150 1900 50  0001 C CNN
+	1    1150 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1150 2050
+Wire Wire Line
+	1150 2050 1550 2050
+$Comp
+L power:+3.3V #PWR0143
+U 1 1 5D41881E
+P 1150 1700
+F 0 "#PWR0143" H 1150 1550 50  0001 C CNN
+F 1 "+3.3V" H 1165 1873 50  0000 C CNN
+F 2 "" H 1150 1700 50  0001 C CNN
+F 3 "" H 1150 1700 50  0001 C CNN
+	1    1150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1700 1150 1750
 $EndSCHEMATC

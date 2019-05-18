@@ -954,28 +954,15 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D235C25
-P 8650 4700
+P 9450 4700
 AR Path="/5CDEAC68/5D235C25" Ref="#PWR?"  Part="1" 
 AR Path="/5CDEAB6D/5D235C25" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 8650 4450 50  0001 C CNN
-F 1 "GND" V 8655 4572 50  0000 R CNN
-F 2 "" H 8650 4700 50  0001 C CNN
-F 3 "" H 8650 4700 50  0001 C CNN
-	1    8650 4700
+F 0 "#PWR0139" H 9450 4450 50  0001 C CNN
+F 1 "GND" V 9455 4572 50  0000 R CNN
+F 2 "" H 9450 4700 50  0001 C CNN
+F 3 "" H 9450 4700 50  0001 C CNN
+	1    9450 4700
 	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5D235C2B
-P 8650 4800
-AR Path="/5CDEAC68/5D235C2B" Ref="#PWR?"  Part="1" 
-AR Path="/5CDEAB6D/5D235C2B" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 8650 4650 50  0001 C CNN
-F 1 "+3.3V" V 8665 4928 50  0000 L CNN
-F 2 "" H 8650 4800 50  0001 C CNN
-F 3 "" H 8650 4800 50  0001 C CNN
-	1    8650 4800
-	0    -1   -1   0   
 $EndComp
 Text Label 8550 4900 2    50   ~ 0
 I2C_SCL
@@ -995,22 +982,18 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Female J6
 U 1 1 5D24C80E
-P 8950 4800
-F 0 "J6" H 8978 4776 50  0000 L CNN
-F 1 "display" H 8978 4685 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8950 4800 50  0001 C CNN
-F 3 "~" H 8950 4800 50  0001 C CNN
-	1    8950 4800
+P 9700 4800
+F 0 "J6" H 9728 4776 50  0000 L CNN
+F 1 "display" H 9728 4685 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9700 4800 50  0001 C CNN
+F 3 "~" H 9700 4800 50  0001 C CNN
+	1    9700 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 4900 8750 4900
+	9450 4700 9500 4700
 Wire Wire Line
-	8750 4800 8650 4800
-Wire Wire Line
-	8650 4700 8750 4700
-Wire Wire Line
-	8750 5000 8550 5000
+	9500 5000 8700 5000
 Text Notes 8350 4450 0    50   ~ 0
 display_conection
 Wire Notes Line
@@ -1074,4 +1057,69 @@ Wire Notes Line
 	3000 3050 1500 3050
 Text Notes 1500 3000 0    50   ~ 0
 programing connection\n
+Wire Wire Line
+	9500 4800 9450 4800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D235C2B
+P 9450 4800
+AR Path="/5CDEAC68/5D235C2B" Ref="#PWR?"  Part="1" 
+AR Path="/5CDEAB6D/5D235C2B" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR0141" H 9450 4650 50  0001 C CNN
+F 1 "+3.3V" V 9465 4928 50  0000 L CNN
+F 2 "" H 9450 4800 50  0001 C CNN
+F 3 "" H 9450 4800 50  0001 C CNN
+	1    9450 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5D3198A1
+P 8700 4850
+F 0 "R27" H 8770 4896 50  0000 L CNN
+F 1 "1k" H 8770 4805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8630 4850 50  0001 C CNN
+F 3 "~" H 8700 4850 50  0001 C CNN
+	1    8700 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 8700 5000
+Wire Wire Line
+	8700 5000 8550 5000
+$Comp
+L Device:R R28
+U 1 1 5D319E5F
+P 8950 4750
+F 0 "R28" H 9020 4796 50  0000 L CNN
+F 1 "1k" H 9020 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 4750 50  0001 C CNN
+F 3 "~" H 8950 4750 50  0001 C CNN
+	1    8950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D31ED2B
+P 8550 4600
+AR Path="/5CDEAC68/5D31ED2B" Ref="#PWR?"  Part="1" 
+AR Path="/5CDEAB6D/5D31ED2B" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 8550 4450 50  0001 C CNN
+F 1 "+3.3V" V 8565 4728 50  0000 L CNN
+F 2 "" H 8550 4600 50  0001 C CNN
+F 3 "" H 8550 4600 50  0001 C CNN
+	1    8550 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 4600 8700 4600
+Wire Wire Line
+	8700 4700 8700 4600
+Connection ~ 8700 4600
+Connection ~ 8950 4900
+Wire Wire Line
+	8950 4900 9500 4900
+Wire Wire Line
+	8550 4900 8950 4900
+Wire Wire Line
+	8700 4600 8950 4600
 $EndSCHEMATC
