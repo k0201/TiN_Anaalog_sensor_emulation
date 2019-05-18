@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -32,8 +32,6 @@ F11 "ADC7" O L 4300 4250 50
 F12 "ADC6" O L 4300 4150 50 
 F13 "POTRST" O L 4300 3300 50 
 F14 "POTSHDN" O L 4300 3400 50 
-F15 "I2C_SCL" O R 5950 3300 50 
-F16 "I2C_SDA" O R 5950 3500 50 
 $EndSheet
 $Sheet
 S 3000 2750 950  1550
@@ -53,14 +51,6 @@ F11 "OUT4" O R 3950 3850 50
 F12 "OUT6" O R 3950 4050 50 
 F13 "OUT7" O R 3950 4150 50 
 F14 "OUT8" O R 3950 4250 50 
-$EndSheet
-$Sheet
-S 6750 2950 1500 750 
-U 5CDEAC68
-F0 "screen" 50
-F1 "screen.sch" 50
-F2 "I2C_SCL" I L 6750 3300 50 
-F3 "I2C_SDA" I L 6750 3500 50 
 $EndSheet
 $Sheet
 S 4450 1750 500  150 
@@ -95,10 +85,10 @@ Wire Wire Line
 Wire Wire Line
 	4300 3400 3950 3400
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 5D813031
 P 5650 1850
-F 0 "H?" H 5750 1896 50  0000 L CNN
+F 0 "H4" H 5750 1896 50  0000 L CNN
 F 1 "MountingHole" H 5750 1805 50  0000 L CNN
 F 2 "" H 5650 1850 50  0001 C CNN
 F 3 "~" H 5650 1850 50  0001 C CNN
@@ -106,10 +96,10 @@ F 3 "~" H 5650 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H3
 U 1 1 5D8131EE
 P 5650 1650
-F 0 "H?" H 5750 1696 50  0000 L CNN
+F 0 "H3" H 5750 1696 50  0000 L CNN
 F 1 "MountingHole" H 5750 1605 50  0000 L CNN
 F 2 "" H 5650 1650 50  0001 C CNN
 F 3 "~" H 5650 1650 50  0001 C CNN
@@ -117,10 +107,10 @@ F 3 "~" H 5650 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 5D8138A8
 P 5650 1450
-F 0 "H?" H 5750 1496 50  0000 L CNN
+F 0 "H2" H 5750 1496 50  0000 L CNN
 F 1 "MountingHole" H 5750 1405 50  0000 L CNN
 F 2 "" H 5650 1450 50  0001 C CNN
 F 3 "~" H 5650 1450 50  0001 C CNN
@@ -128,18 +118,14 @@ F 3 "~" H 5650 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 5D8139A7
 P 5650 1250
-F 0 "H?" H 5750 1296 50  0000 L CNN
+F 0 "H1" H 5750 1296 50  0000 L CNN
 F 1 "MountingHole" H 5750 1205 50  0000 L CNN
 F 2 "" H 5650 1250 50  0001 C CNN
 F 3 "~" H 5650 1250 50  0001 C CNN
 	1    5650 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 3300 6750 3300
-Wire Wire Line
-	5950 3500 6750 3500
 $EndSCHEMATC
