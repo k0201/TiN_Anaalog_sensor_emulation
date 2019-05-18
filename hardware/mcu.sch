@@ -531,23 +531,15 @@ Wire Wire Line
 	5250 5200 4900 5200
 Wire Wire Line
 	5250 5300 4900 5300
-Text HLabel 4800 4100 0    50   Output ~ 0
+Text HLabel 4400 4100 0    50   Output ~ 0
 POTSCK
-Text HLabel 4800 4300 0    50   Output ~ 0
-POTMOSI
-Wire Wire Line
-	4800 4100 5250 4100
-Wire Wire Line
-	5250 4300 4800 4300
-Text Label 4900 4100 0    50   ~ 0
-POTSCK
-Text Label 4900 4300 0    50   ~ 0
+Text HLabel 4400 4300 0    50   Output ~ 0
 POTMOSI
 Text Label 4950 4200 0    50   ~ 0
 POTSS
 Wire Wire Line
-	5250 4200 4800 4200
-Text HLabel 4800 4200 0    50   Output ~ 0
+	5250 4200 4400 4200
+Text HLabel 4400 4200 0    50   Output ~ 0
 POTCS
 Wire Wire Line
 	4900 5000 5250 5000
@@ -602,10 +594,10 @@ ADC6
 Text HLabel 6700 4400 2    50   Output ~ 0
 ADC6
 Wire Wire Line
-	5250 4400 4850 4400
+	5250 4400 4400 4400
 Wire Wire Line
-	5250 4500 4850 4500
-Text HLabel 4850 4400 0    50   Output ~ 0
+	5250 4500 4400 4500
+Text HLabel 4400 4400 0    50   Output ~ 0
 POTRST
 Text Label 4950 4400 0    50   ~ 0
 POTRST
@@ -814,7 +806,7 @@ F 3 "" H 2200 3500 50  0001 C CNN
 	1    2200 3500
 	0    1    1    0   
 $EndComp
-Text HLabel 4850 4500 0    50   Output ~ 0
+Text HLabel 4400 4500 0    50   Output ~ 0
 POTSHDN
 Wire Wire Line
 	2200 3500 2150 3500
@@ -993,7 +985,7 @@ $EndComp
 Wire Wire Line
 	9450 4700 9500 4700
 Wire Wire Line
-	9500 5000 8700 5000
+	9500 5000 8650 5000
 Text Notes 8350 4450 0    50   ~ 0
 display_conection
 Wire Notes Line
@@ -1072,29 +1064,16 @@ F 3 "" H 9450 4800 50  0001 C CNN
 	1    9450 4800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R27
-U 1 1 5D3198A1
-P 8700 4850
-F 0 "R27" H 8770 4896 50  0000 L CNN
-F 1 "1k" H 8770 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8630 4850 50  0001 C CNN
-F 3 "~" H 8700 4850 50  0001 C CNN
-	1    8700 4850
-	1    0    0    -1  
-$EndComp
-Connection ~ 8700 5000
-Wire Wire Line
-	8700 5000 8550 5000
+Connection ~ 8650 5000
 $Comp
 L Device:R R28
 U 1 1 5D319E5F
-P 8950 4750
-F 0 "R28" H 9020 4796 50  0000 L CNN
-F 1 "1k" H 9020 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 4750 50  0001 C CNN
-F 3 "~" H 8950 4750 50  0001 C CNN
-	1    8950 4750
+P 8900 4750
+F 0 "R28" H 8970 4796 50  0000 L CNN
+F 1 "1k" H 8970 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 4750 50  0001 C CNN
+F 3 "~" H 8900 4750 50  0001 C CNN
+	1    8900 4750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1111,15 +1090,58 @@ F 3 "" H 8550 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 4600 8700 4600
+	8550 4600 8650 4600
 Wire Wire Line
-	8700 4700 8700 4600
-Connection ~ 8700 4600
-Connection ~ 8950 4900
+	8650 4700 8650 4600
+Connection ~ 8650 4600
+Connection ~ 8900 4900
 Wire Wire Line
-	8950 4900 9500 4900
+	8900 4900 9500 4900
 Wire Wire Line
-	8550 4900 8950 4900
+	8550 4900 8900 4900
 Wire Wire Line
-	8700 4600 8950 4600
+	8650 4600 8900 4600
+$Comp
+L Device:R R32
+U 1 1 5D460BB7
+P 4700 4100
+F 0 "R32" V 4493 4100 50  0000 C CNN
+F 1 "47" V 4584 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4630 4100 50  0001 C CNN
+F 3 "~" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5D4611CB
+P 4700 4300
+F 0 "R33" V 4493 4300 50  0000 C CNN
+F 1 "47" V 4584 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4630 4300 50  0001 C CNN
+F 3 "~" H 4700 4300 50  0001 C CNN
+	1    4700 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 4300 4550 4300
+Wire Wire Line
+	4400 4100 4550 4100
+Wire Wire Line
+	4850 4100 5250 4100
+Wire Wire Line
+	5250 4300 4850 4300
+Wire Wire Line
+	8650 5000 8550 5000
+$Comp
+L Device:R R27
+U 1 1 5D3198A1
+P 8650 4850
+F 0 "R27" H 8720 4896 50  0000 L CNN
+F 1 "1k" H 8720 4805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8580 4850 50  0001 C CNN
+F 3 "~" H 8650 4850 50  0001 C CNN
+	1    8650 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
