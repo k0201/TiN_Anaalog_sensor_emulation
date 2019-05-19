@@ -487,19 +487,6 @@ F 3 "" H 9250 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB?
-U 1 1 5D6AB170
-P 7400 3850
-AR Path="/5CDEAB6D/5D6AB170" Ref="FB?"  Part="1" 
-AR Path="/5CDEEC5A/5D6AB170" Ref="FB1"  Part="1" 
-F 0 "FB1" H 7500 3896 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 7500 3805 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7330 3850 50  0001 C CNN
-F 3 "~" H 7400 3850 50  0001 C CNN
-	1    7400 3850
-	0    1    -1   0   
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 5D6AB176
 P 7650 3850
@@ -512,8 +499,6 @@ F 3 "" H 7650 3850 50  0001 C CNN
 	1    7650 3850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7650 3850 7500 3850
 $Comp
 L power:+3.3VA #PWR0146
 U 1 1 5D6ADCA1
@@ -525,8 +510,6 @@ F 3 "" H 7100 3850 50  0001 C CNN
 	1    7100 3850
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7100 3850 7300 3850
 Wire Notes Line
 	6650 3750 6650 4700
 Wire Notes Line
@@ -539,17 +522,6 @@ Wire Notes Line
 	6650 3400 6650 3700
 Text Notes 6650 3350 0    50   ~ 0
 analog & digital voltage split\n
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5D20679D
-P 7300 750
-F 0 "#FLG01" H 7300 825 50  0001 C CNN
-F 1 "PWR_FLAG" V 7300 877 50  0000 L CNN
-F 2 "" H 7300 750 50  0001 C CNN
-F 3 "~" H 7300 750 50  0001 C CNN
-	1    7300 750 
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5D20E67B
@@ -576,23 +548,6 @@ F 3 "" H 7750 4250 50  0001 C CNN
 	1    7750 4250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB?
-U 1 1 5D2119F7
-P 7400 4250
-AR Path="/5CDEAB6D/5D2119F7" Ref="FB?"  Part="1" 
-AR Path="/5CDEEC5A/5D2119F7" Ref="FB2"  Part="1" 
-F 0 "FB2" H 7500 4296 50  0000 L CNN
-F 1 "Ferrite_Bead_Small" H 7500 4205 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7330 4250 50  0001 C CNN
-F 3 "~" H 7400 4250 50  0001 C CNN
-	1    7400 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 4250 7500 4250
-Wire Wire Line
-	7300 4250 7000 4250
 Text Notes 6700 600  0    50   ~ 0
 power flags\n\n
 Wire Notes Line
@@ -613,17 +568,6 @@ F 3 "~" H 7300 1100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5D21BB43
-P 7300 1000
-F 0 "#FLG03" H 7300 1075 50  0001 C CNN
-F 1 "PWR_FLAG" V 7300 1127 50  0000 L CNN
-F 2 "" H 7300 1000 50  0001 C CNN
-F 3 "~" H 7300 1000 50  0001 C CNN
-	1    7300 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D21C471
 P 7400 1100
@@ -635,32 +579,6 @@ F 2 "" H 7400 1100 50  0001 C CNN
 F 3 "" H 7400 1100 50  0001 C CNN
 	1    7400 1100
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5D21C8EE
-P 7400 1000
-AR Path="/5CDEAB6D/5D21C8EE" Ref="#PWR?"  Part="1" 
-AR Path="/5CDEEC5A/5D21C8EE" Ref="#PWR0149"  Part="1" 
-F 0 "#PWR0149" H 7400 750 50  0001 C CNN
-F 1 "GNDA" V 7405 873 50  0000 R CNN
-F 2 "" H 7400 1000 50  0001 C CNN
-F 3 "" H 7400 1000 50  0001 C CNN
-	1    7400 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5D21CE94
-P 7400 750
-AR Path="/5CDEAB6D/5D21CE94" Ref="#PWR?"  Part="1" 
-AR Path="/5CDEEC5A/5D21CE94" Ref="#PWR0147"  Part="1" 
-F 0 "#PWR0147" H 7400 600 50  0001 C CNN
-F 1 "+3.3V" V 7415 878 50  0000 L CNN
-F 2 "" H 7400 750 50  0001 C CNN
-F 3 "" H 7400 750 50  0001 C CNN
-	1    7400 750 
-	0    1    1    0   
 $EndComp
 $Comp
 L power:+9V #PWR0148
@@ -686,10 +604,6 @@ F 3 "~" H 7300 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 850  7400 850 
-Wire Wire Line
-	7300 750  7400 750 
-Wire Wire Line
-	7300 1000 7400 1000
 Wire Wire Line
 	7400 1100 7300 1100
 Wire Notes Line
@@ -763,4 +677,8 @@ Wire Notes Line
 	650  4050 650  4850
 Wire Notes Line
 	650  4050 2550 4050
+Wire Wire Line
+	7100 3850 7650 3850
+Wire Wire Line
+	7000 4250 7750 4250
 $EndSCHEMATC

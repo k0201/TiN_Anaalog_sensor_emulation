@@ -157,35 +157,6 @@ F 3 "" H 5400 1800 50  0001 C CNN
 	1    5400 1800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7000 1650 7000 1500
-Wire Wire Line
-	7250 1650 7250 1500
-Connection ~ 7250 1200
-$Comp
-L Device:C C13
-U 1 1 5CEA12AD
-P 7250 1350
-F 0 "C13" V 6998 1350 50  0000 C CNN
-F 1 "10n" V 7089 1350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7288 1200 50  0001 C CNN
-F 3 "~" H 7250 1350 50  0001 C CNN
-	1    7250 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 1200 7250 1200
-$Comp
-L Device:C C12
-U 1 1 5CE95807
-P 7000 1350
-F 0 "C12" V 6748 1350 50  0000 C CNN
-F 1 "1u" V 6839 1350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 1200 50  0001 C CNN
-F 3 "~" H 7000 1350 50  0001 C CNN
-	1    7000 1350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR016
 U 1 1 5CEA7A22
@@ -197,19 +168,6 @@ F 3 "" H 5200 6250 50  0001 C CNN
 	1    5200 6250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+3.3VA #PWR029
-U 1 1 5CEA97D8
-P 7500 1200
-F 0 "#PWR029" H 7500 1050 50  0001 C CNN
-F 1 "+3.3VA" V 7515 1328 50  0000 L CNN
-F 2 "" H 7500 1200 50  0001 C CNN
-F 3 "" H 7500 1200 50  0001 C CNN
-	1    7500 1200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7250 1200 7500 1200
 $Comp
 L power:+3.3VA #PWR021
 U 1 1 5CEB0EA7
@@ -892,28 +850,6 @@ Wire Wire Line
 	6450 4900 6850 4900
 NoConn ~ 5250 3200
 $Comp
-L power:GNDA #PWR028
-U 1 1 5CEA12B3
-P 7250 1650
-F 0 "#PWR028" H 7250 1400 50  0001 C CNN
-F 1 "GNDA" V 7255 1523 50  0000 R CNN
-F 2 "" H 7250 1650 50  0001 C CNN
-F 3 "" H 7250 1650 50  0001 C CNN
-	1    7250 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR027
-U 1 1 5CE9FB9E
-P 7000 1650
-F 0 "#PWR027" H 7000 1400 50  0001 C CNN
-F 1 "GNDA" V 7005 1523 50  0000 R CNN
-F 2 "" H 7000 1650 50  0001 C CNN
-F 3 "" H 7000 1650 50  0001 C CNN
-	1    7000 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR020
 U 1 1 5CE9321B
 P 5750 1300
@@ -1131,17 +1067,6 @@ Wire Wire Line
 	5250 3400 4850 3400
 Wire Wire Line
 	4850 3500 5250 3500
-$Comp
-L Connector:Conn_01x03_Male J1
-U 1 1 5CE37969
-P 1450 1700
-F 0 "J1" H 1558 1981 50  0000 C CNN
-F 1 "ADc" V 1558 1890 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1450 1700 50  0001 C CNN
-F 3 "~" H 1450 1700 50  0001 C CNN
-	1    1450 1700
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	1400 2800 3050 2800
 $Comp
@@ -1537,8 +1462,6 @@ Wire Wire Line
 Connection ~ 1750 1600
 Wire Wire Line
 	1900 1800 1750 1800
-Wire Wire Line
-	1750 1800 1650 1800
 Connection ~ 1750 1800
 Wire Wire Line
 	1650 1700 2050 1700
@@ -1586,30 +1509,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 1750 
 	1    1750 1700
 	0    1    1    0   
 $EndComp
-$Comp
-L Power_Protection:PESD5V0L4UG D6
-U 3 1 5D505F16
-P 2800 1450
-F 0 "D6" H 2868 1450 50  0000 L CNN
-F 1 "PESD5V0L4UG" H 2868 1405 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 2800 1450 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 2800 1450 50  0001 C CNN
-	3    2800 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Power_Protection:PESD5V0L4UG D6
-U 4 1 5D506693
-P 2800 1550
-F 0 "D6" H 2868 1550 50  0000 L CNN
-F 1 "PESD5V0L4UG" H 2868 1505 50  0001 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 2800 1550 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 2800 1550 50  0001 C CNN
-	4    2800 1550
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2700 1450
-NoConn ~ 2700 1550
 $Comp
 L Power_Protection:PESD5V0L4UG D7
 U 1 1 5D55BD94
@@ -1727,17 +1626,17 @@ F 3 "" H 2850 3950 50  0001 C CNN
 	1    2850 3950
 	1    0    0    -1  
 $EndComp
-Text Label 10800 2650 3    50   ~ 0
+Text Label 10000 2650 3    50   ~ 0
 sw_right
 Text Label 10550 2650 3    50   ~ 0
 sw_bot
 Text Label 10200 3200 3    50   ~ 0
 sw_mid1
-Text Label 9950 3200 3    50   ~ 0
+Text Label 10800 2650 3    50   ~ 0
 sw_mid2
-Text Label 10000 2650 3    50   ~ 0
+Text Label 9950 3200 3    50   ~ 0
 sw_top
-Text Label 10250 2650 3    50   ~ 0
+Text Label 10500 3250 3    50   ~ 0
 sw_left
 $Comp
 L Power_Protection:PESD5V0L4UG D10
@@ -1790,7 +1689,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 2950 10000 2650
 Wire Wire Line
-	10250 2650 10250 2950
+	10500 3250 10500 3550
 Wire Wire Line
 	10550 2950 10550 2650
 Wire Wire Line
@@ -1821,6 +1720,24 @@ F 3 "" H 10750 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10750 3850 10750 3750
-NoConn ~ 10500 3550
 NoConn ~ 10750 3550
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J1
+U 1 1 5DB034FE
+P 1350 1600
+F 0 "J1" H 1400 1817 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 1400 1726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 1350 1600 50  0001 C CNN
+F 3 "~" H 1350 1600 50  0001 C CNN
+	1    1350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1600 1150 1700
+Wire Wire Line
+	1150 1700 1150 1800
+Wire Wire Line
+	1150 1800 1750 1800
+Connection ~ 1150 1700
+NoConn ~ 10250 2950
 $EndSCHEMATC

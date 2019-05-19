@@ -3705,9 +3705,9 @@ Wire Wire Line
 Wire Wire Line
 	9500 9300 9850 9300
 Wire Wire Line
-	9850 9200 9500 9200
+	9850 9200 9600 9200
 Wire Wire Line
-	9500 9100 9850 9100
+	9500 9100 9750 9100
 Text Label 9500 9100 2    50   ~ 0
 pot8
 Text Label 9500 9200 2    50   ~ 0
@@ -3769,4 +3769,164 @@ Wire Wire Line
 Connection ~ 10350 9700
 Wire Wire Line
 	10350 9700 10350 9800
+$Comp
+L Power_Protection:PESD5V0L4UG D?
+U 3 1 5DD9CDD5
+P 9750 9000
+AR Path="/5CDEAB6D/5DD9CDD5" Ref="D?"  Part="3" 
+AR Path="/5CDEABB2/5DD9CDD5" Ref="D6"  Part="3" 
+F 0 "D6" H 9818 9000 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 9818 8955 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 9750 9000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 9750 9000 50  0001 C CNN
+	3    9750 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D?
+U 4 1 5DD9CDDB
+P 9600 9100
+AR Path="/5CDEAB6D/5DD9CDDB" Ref="D?"  Part="4" 
+AR Path="/5CDEABB2/5DD9CDDB" Ref="D6"  Part="4" 
+F 0 "D6" H 9668 9100 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 9668 9055 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 9600 9100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 9600 9100 50  0001 C CNN
+	4    9600 9100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9750 9100
+Wire Wire Line
+	9750 9100 9850 9100
+Connection ~ 9600 9200
+Wire Wire Line
+	9600 9200 9500 9200
+$Comp
+L Power_Protection:PESD5V0L4UG D12
+U 1 1 5DE7618B
+P 11050 8850
+F 0 "D12" H 11050 9055 50  0000 C CNN
+F 1 "PESD5V0L4UG" H 11050 8964 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11050 8850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11050 8850 50  0001 C CNN
+	1    11050 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D12
+U 2 1 5DE77CC7
+P 11050 9050
+F 0 "D12" H 11118 9096 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 11118 9005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11050 9050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11050 9050 50  0001 C CNN
+	2    11050 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D12
+U 3 1 5DE7A9F7
+P 11050 9300
+F 0 "D12" H 11118 9346 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 11118 9255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11050 9300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11050 9300 50  0001 C CNN
+	3    11050 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D12
+U 4 1 5DE7C364
+P 11050 9500
+F 0 "D12" H 11118 9546 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 11118 9455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11050 9500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11050 9500 50  0001 C CNN
+	4    11050 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D11
+U 1 1 5DE7E45C
+P 11100 9850
+F 0 "D11" H 11100 10055 50  0000 C CNN
+F 1 "PESD5V0L4UG" H 11100 9964 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11100 9850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11100 9850 50  0001 C CNN
+	1    11100 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D11
+U 2 1 5DE7E462
+P 11100 10050
+F 0 "D11" H 11168 10096 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 11168 10005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11100 10050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11100 10050 50  0001 C CNN
+	2    11100 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D11
+U 3 1 5DE7E468
+P 11100 10300
+F 0 "D11" H 11168 10346 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 11168 10255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11100 10300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11100 10300 50  0001 C CNN
+	3    11100 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PESD5V0L4UG D11
+U 4 1 5DE7E46E
+P 11100 10500
+F 0 "D11" H 11168 10546 50  0000 L CNN
+F 1 "PESD5V0L4UG" H 11168 10455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 11100 10500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 11100 10500 50  0001 C CNN
+	4    11100 10500
+	1    0    0    -1  
+$EndComp
+Text Label 10950 8850 2    50   ~ 0
+pot6
+Text Label 10950 9050 2    50   ~ 0
+pot5
+Text Label 10950 9500 2    50   ~ 0
+pot4
+Text Label 10950 9300 2    50   ~ 0
+pot3
+$Comp
+L power:GND #PWR0183
+U 1 1 5DEE9530
+P 11300 8850
+F 0 "#PWR0183" H 11300 8600 50  0001 C CNN
+F 1 "GND" H 11305 8677 50  0000 C CNN
+F 2 "" H 11300 8850 50  0001 C CNN
+F 3 "" H 11300 8850 50  0001 C CNN
+	1    11300 8850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11300 8850 11150 8850
+$Comp
+L power:GND #PWR0184
+U 1 1 5DF1F5A6
+P 11300 9850
+F 0 "#PWR0184" H 11300 9600 50  0001 C CNN
+F 1 "GND" H 11305 9677 50  0000 C CNN
+F 2 "" H 11300 9850 50  0001 C CNN
+F 3 "" H 11300 9850 50  0001 C CNN
+	1    11300 9850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	11200 9850 11300 9850
+Text Label 11000 10050 2    50   ~ 0
+pot2
+Text Label 11000 9850 2    50   ~ 0
+pot1
+NoConn ~ 11000 10300
+NoConn ~ 11000 10500
 $EndSCHEMATC
