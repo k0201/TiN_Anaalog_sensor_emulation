@@ -272,7 +272,7 @@ U 1 1 5CEE40FC
 P 1900 5950
 F 0 "J3" H 1850 6667 50  0000 C CNN
 F 1 "Micro_SD_Card" H 1850 6576 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 3050 6250 50  0001 C CNN
+F 2 "symbols:MOLEX_503398-1892" H 3050 6250 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/mcsp-q-08-a-sg/zlacza-do-kart/adam-tech/mcsp-q-08-a-sg-t-r/" H 1900 5950 50  0001 C CNN
 	1    1900 5950
 	-1   0    0    -1  
@@ -1614,7 +1614,7 @@ $Comp
 L Power_Protection:PESD5V0L4UG D7
 U 1 1 5D55BD94
 P 2700 3950
-F 0 "D7" H 2700 4155 50  0000 C CNN
+F 0 "D7" H 2850 4000 50  0000 C CNN
 F 1 "PESD5V0L4UG" H 2600 3800 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 2700 3950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf" H 2700 3950 50  0001 C CNN
