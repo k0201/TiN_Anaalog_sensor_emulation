@@ -1636,7 +1636,7 @@ Text Label 10800 2650 3    50   ~ 0
 sw_mid2
 Text Label 9950 3200 3    50   ~ 0
 sw_top
-Text Label 10250 2650 3    50   ~ 0
+Text Label 10500 3250 3    50   ~ 0
 sw_left
 $Comp
 L Power_Protection:PESD5V0L4UG D10
@@ -1689,7 +1689,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 2950 10000 2650
 Wire Wire Line
-	10250 2650 10250 2950
+	10500 3250 10500 3550
 Wire Wire Line
 	10550 2950 10550 2650
 Wire Wire Line
@@ -1720,7 +1720,6 @@ F 3 "" H 10750 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10750 3850 10750 3750
-NoConn ~ 10500 3550
 NoConn ~ 10750 3550
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J1
@@ -1740,4 +1739,5 @@ Wire Wire Line
 Wire Wire Line
 	1150 1800 1750 1800
 Connection ~ 1150 1700
+NoConn ~ 10250 2950
 $EndSCHEMATC
