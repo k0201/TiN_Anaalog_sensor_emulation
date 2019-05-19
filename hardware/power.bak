@@ -104,7 +104,7 @@ L Device:R R22
 U 1 1 5CEC0976
 P 2650 4050
 F 0 "R22" H 2720 4096 50  0000 L CNN
-F 1 "15" H 2720 4005 50  0000 L CNN
+F 1 "N.C" H 2720 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2580 4050 50  0001 C CNN
 F 3 "~" H 2650 4050 50  0001 C CNN
 	1    2650 4050
@@ -124,23 +124,12 @@ $EndComp
 Connection ~ 3350 4400
 Wire Wire Line
 	5850 4650 5750 4650
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5CEC3FA4
-P 2650 4300
-F 0 "JP1" V 2696 4252 50  0000 R CNN
-F 1 "Jumper_NO_Small" V 2605 4252 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2650 4300 50  0001 C CNN
-F 3 "~" H 2650 4300 50  0001 C CNN
-	1    2650 4300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2650 4400 3350 4400
 Wire Wire Line
 	2650 3900 3350 3900
 Text Notes 800  4900 0    50   ~ 0
-close and open  jumpers to set vout = 3.45V\n
+open  jumper to set vout = 3.45V\nset R to 15
 Connection ~ 2650 3900
 NoConn ~ 5600 2200
 Wire Wire Line
@@ -194,10 +183,6 @@ Wire Wire Line
 Connection ~ 2750 2450
 Wire Wire Line
 	2750 2450 3050 2450
-Wire Notes Line
-	950  4800 950  4300
-Wire Notes Line
-	950  4300 2600 4300
 Wire Notes Line
 	3300 4300 2950 4300
 Wire Notes Line
@@ -452,38 +437,33 @@ F 3 "~" H 8450 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8300 1950 7950 1950
+	8300 1950 8150 1950
 $Comp
 L Device:D_TVS D2
 U 1 1 5D3648D0
-P 8850 2300
-F 0 "D2" V 8804 2379 50  0000 L CNN
-F 1 "D_TVS" V 8895 2379 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 8850 2300 50  0001 C CNN
-F 3 "~" H 8850 2300 50  0001 C CNN
-	1    8850 2300
+P 8150 2300
+F 0 "D2" V 8104 2379 50  0000 L CNN
+F 1 "D_TVS" V 8195 2379 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 8150 2300 50  0001 C CNN
+F 3 "~" H 8150 2300 50  0001 C CNN
+	1    8150 2300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 1950 8850 2150
-Connection ~ 8850 1950
-Wire Wire Line
-	8850 1950 8600 1950
+	8150 1950 8150 2150
 $Comp
 L power:GND #PWR0128
 U 1 1 5D365DC5
-P 8850 2550
-F 0 "#PWR0128" H 8850 2300 50  0001 C CNN
-F 1 "GND" H 8855 2377 50  0000 C CNN
-F 2 "" H 8850 2550 50  0001 C CNN
-F 3 "" H 8850 2550 50  0001 C CNN
-	1    8850 2550
+P 8150 2550
+F 0 "#PWR0128" H 8150 2300 50  0001 C CNN
+F 1 "GND" H 8155 2377 50  0000 C CNN
+F 2 "" H 8150 2550 50  0001 C CNN
+F 3 "" H 8150 2550 50  0001 C CNN
+	1    8150 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 2450 8850 2550
-Wire Wire Line
-	8850 1950 9700 1950
+	8150 2450 8150 2550
 $Comp
 L power:+3.3VA #PWR0116
 U 1 1 5D62C9E7
@@ -770,4 +750,17 @@ Wire Wire Line
 Wire Wire Line
 	6050 2450 6050 2250
 Connection ~ 5850 2450
+Connection ~ 8150 1950
+Wire Wire Line
+	8150 1950 7950 1950
+Wire Wire Line
+	8600 1950 9700 1950
+Wire Wire Line
+	2650 4200 2650 4400
+Wire Notes Line
+	800  4850 650  4850
+Wire Notes Line
+	650  4050 650  4850
+Wire Notes Line
+	650  4050 2550 4050
 $EndSCHEMATC
