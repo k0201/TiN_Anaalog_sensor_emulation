@@ -256,7 +256,7 @@ F 1 "Barrel_Jack" H 9770 2099 50  0000 R CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 10050 2010 50  0001 C CNN
 F 3 "~" H 10050 2010 50  0001 C CNN
 	1    10000 2050
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9700 2150 9550 2150
@@ -668,7 +668,7 @@ Connection ~ 8150 1950
 Wire Wire Line
 	8150 1950 7950 1950
 Wire Wire Line
-	8600 1950 9700 1950
+	8600 1950 9250 1950
 Wire Wire Line
 	2650 4200 2650 4400
 Wire Notes Line
@@ -681,4 +681,36 @@ Wire Wire Line
 	7100 3850 7650 3850
 Wire Wire Line
 	7000 4250 7750 4250
+Wire Wire Line
+	9350 1700 9350 2150
+Wire Wire Line
+	9350 2150 9550 2150
+Connection ~ 9550 2150
+Wire Wire Line
+	9250 1700 9250 1950
+Connection ~ 9250 1950
+Wire Wire Line
+	9250 1950 9700 1950
+$Comp
+L Connector:Conn_01x01_Male J9
+U 1 1 5CF71EF7
+P 9350 1500
+F 0 "J9" V 9412 1544 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 9503 1544 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 9350 1500 50  0001 C CNN
+F 3 "~" H 9350 1500 50  0001 C CNN
+	1    9350 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J10
+U 1 1 5CF74160
+P 9250 1500
+F 0 "J10" V 9312 1544 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 9403 1544 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 9250 1500 50  0001 C CNN
+F 3 "~" H 9250 1500 50  0001 C CNN
+	1    9250 1500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
