@@ -686,16 +686,16 @@ F 3 "~" H 4750 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5250 2800 4750 2800
+	5250 2800 5100 2800
 $Comp
 L power:GND #PWR014
 U 1 1 5CE5FAB4
-P 4750 2500
-F 0 "#PWR014" H 4750 2250 50  0001 C CNN
-F 1 "GND" V 4755 2372 50  0000 R CNN
-F 2 "" H 4750 2500 50  0001 C CNN
-F 3 "" H 4750 2500 50  0001 C CNN
-	1    4750 2500
+P 4250 2750
+F 0 "#PWR014" H 4250 2500 50  0001 C CNN
+F 1 "GND" V 4255 2622 50  0000 R CNN
+F 2 "" H 4250 2750 50  0001 C CNN
+F 3 "" H 4250 2750 50  0001 C CNN
+	1    4250 2750
 	-1   0    0    1   
 $EndComp
 Text Label 4850 2800 0    50   ~ 0
@@ -714,7 +714,7 @@ Wire Wire Line
 	6450 5100 6850 5100
 Wire Wire Line
 	6450 5200 6850 5200
-Text Label 4900 4600 0    50   ~ 0
+Text Label 4900 3200 0    50   ~ 0
 BOOT0
 $Comp
 L power:GND #PWR04
@@ -756,7 +756,7 @@ POTSHDN
 Wire Wire Line
 	1900 3500 1850 3500
 Wire Wire Line
-	4900 4600 5250 4600
+	4900 3200 5250 3200
 Text Label 1950 3400 0    50   ~ 0
 BOOT0
 Wire Wire Line
@@ -803,17 +803,6 @@ F 3 "~" H 4550 3000 50  0001 C CNN
 	1    4550 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR012
-U 1 1 5CF39DCC
-P 4250 2750
-F 0 "#PWR012" H 4250 2600 50  0001 C CNN
-F 1 "+3.3V" H 4265 2923 50  0000 C CNN
-F 2 "" H 4250 2750 50  0001 C CNN
-F 3 "" H 4250 2750 50  0001 C CNN
-	1    4250 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4350 2800 4250 2800
 Wire Wire Line
@@ -848,7 +837,6 @@ Wire Wire Line
 	6450 4800 6850 4800
 Wire Wire Line
 	6450 4900 6850 4900
-NoConn ~ 5250 3200
 $Comp
 L power:+3.3V #PWR020
 U 1 1 5CE9321B
@@ -1067,15 +1055,13 @@ Wire Wire Line
 	5250 3400 4850 3400
 Wire Wire Line
 	4850 3500 5250 3500
-Wire Notes Line
-	1400 2800 3050 2800
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5CE5951A
 P 4000 3100
 F 0 "Y1" H 4194 3146 50  0000 L CNN
 F 1 "Crystal_GND24" H 4194 3055 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4000 3100 50  0001 C CNN
+F 2 "symbols:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 4000 3100 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/abm8-16.000mhz-b2/rezonatory-kwarcowe-smd/abracon/abm8-16-000mhz-b2-t/" H 4000 3100 50  0001 C CNN
 	1    4000 3100
 	1    0    0    -1  
@@ -1471,9 +1457,7 @@ Connection ~ 2050 1700
 Text Notes 1400 1350 0    50   ~ 0
 additional ADC input connections\n
 Wire Notes Line
-	3050 1350 1400 1350
-Wire Notes Line
-	1400 1350 1400 2800
+	900  1350 900  2800
 Wire Notes Line
 	3050 1350 3050 2800
 $Comp
@@ -1740,4 +1724,47 @@ Wire Wire Line
 	1150 1800 1750 1800
 Connection ~ 1150 1700
 NoConn ~ 10250 2950
+NoConn ~ 5250 4600
+$Comp
+L Device:R R58
+U 1 1 5D086583
+P 5100 2650
+F 0 "R58" V 4893 2650 50  0000 C CNN
+F 1 "10k'" V 4984 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5030 2650 50  0001 C CNN
+F 3 "~" H 5100 2650 50  0001 C CNN
+	1    5100 2650
+	-1   0    0    1   
+$EndComp
+Connection ~ 5100 2800
+Wire Wire Line
+	5100 2800 4750 2800
+$Comp
+L power:+3.3V #PWR0147
+U 1 1 5D086A3D
+P 5100 2500
+F 0 "#PWR0147" H 5100 2350 50  0001 C CNN
+F 1 "+3.3V" H 5115 2673 50  0000 C CNN
+F 2 "" H 5100 2500 50  0001 C CNN
+F 3 "" H 5100 2500 50  0001 C CNN
+	1    5100 2500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	900  1350 3050 1350
+Wire Notes Line
+	900  2800 3050 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5D0B54E3
+P 4750 2450
+F 0 "#PWR?" H 4750 2200 50  0001 C CNN
+F 1 "GND" V 4755 2322 50  0000 R CNN
+F 2 "" H 4750 2450 50  0001 C CNN
+F 3 "" H 4750 2450 50  0001 C CNN
+	1    4750 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 2500 4750 2450
 $EndSCHEMATC
